@@ -1,0 +1,24 @@
+{
+	"auto_upgrade_last_run": 1344402584,
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"ASCII Decorator",
+		"CTags",
+		"FileDiffs",
+		"GBK Encoding Support",
+		"Git",
+		"GoSublime",
+		"hg4subl",
+		"KnowledgeBase",
+		"Package Control",
+		"Restructured Text (RST) Snippets",
+		"SublimeAStyleFormatter",
+		"SublimeCodeIntel",
+		"Terminal",
+		"Theme - Nexus",
+		"Theme - Soda",
+		"UnofficialDocs",
+		"VintageEx"
+	]
+}

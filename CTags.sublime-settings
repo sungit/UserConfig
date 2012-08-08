@@ -1,0 +1,18 @@
+{
+    "debug"           :  false,
+    "ctags_command"   :  "ctags -R -f .tags",
+    "filters"         :  {
+        "source.python": {"type":"^i$"}
+    },
+    "definition_filters": {
+        "source.php": {"type":"^v$"}
+    },
+    "definition_current_first": true,
+    "show_context_menus": true,
+    "extra_tag_paths" :  [ 
+        [["source.python", "windows"], "C:\\Python27\\Lib\\tags"],
+        [["source.c", "windows"], "D:\\repos\\projects\\scheme"],
+        [["source.c", "windows"], "D:\\Program Files\\Microsoft Visual Studio\\VC98\\Include"]
+    ],
+    "extra_tag_files" : [".gemtags"]
+}

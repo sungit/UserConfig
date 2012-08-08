@@ -1,0 +1,9 @@
+{
+	"cmd_hist":
+	{
+		"D:\\repos\\tmp\\imap":
+		[
+			"go build -x a.go"
+		]
+	}
+}
