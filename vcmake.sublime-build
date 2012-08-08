@@ -18,15 +18,3 @@
 		}
 	]
 }
-
-// ffi.c(504) : error C2143: syntax error : missing ')' before 'type'
-// ffi.c(504) : error C2143: syntax error : missing ';' before 'type'
-// ffi.c(504) : warning C4552: '<' : operator has no effect; expected operator with side-effect
-// ffi.c(504) : error C2059: syntax error : ')'
-// ffi.c(505) : error C2143: syntax error : missing ';' before '{'
-// ffi.c(506) : warning C4133: '=' : incompatible types - from 'struct cell *' to 'struct _ffi_type *'
-// ffi.c(521) : error C2039: 'ivalue' : is not a member of 'num'
-//         ../..\scheme.h(123) : see declaration of 'num'
-
-// s.h:118:18: error: conflicting types for 'ssize_t'
-// pragmatics.h:338:23: note: previous declaration of 'ssize_t' was here
