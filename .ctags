@@ -1,0 +1,35 @@
+--exclude=.hg
+--exclude=.git
+--exclude=.svn
+--exclude=*_test.go
+--langdef=go
+--langmap=go:.go
+--regex-go=/^import(\s*)"(\w+)"/\2/p,import/
+--regex-go=/^import(\s*)(\()/[import]/p,import/
+--regex-go=/^var(\s*)(\w+)/\2/v,variable/
+--regex-go=/^var(\s*)(\()/[var]/v,variable/
+--regex-go=/^const(\s*)(\w+)/\2/c,const/
+--regex-go=/^const(\s*)(\()/[const]/c,const/
+--regex-go=/^func(\s*)(\w+)/\2/f,function/
+--regex-go=/^func(\s*)\(\w*\s*(.+)\)(\s*)(\w+)(\(.*\))/\4 [\2]/m,method/
+--regex-go=/^type(\s*)(\w+)(\s*)struct/\2/s,struct/
+--regex-go=/^type(\s*)(\w+)(\s*)interface/\2/i,interface/
+--regex-go=/^type(\s*)(\w+)(\s*)(\<[^si])/\2/t,type/
+--regex-go=/^type(\s*)(\w+)(\s*)(\<string)/\2/t,type/
+--regex-go=/^type(\s*)(\w+)(\s*)(\<int\d)/\2/t,type/
+
+--langmap=javascript:.js .html
+--regex-JavaScript=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*new[ \t]+Object\(/\1/o,object/
+--regex-JavaScript=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*\{/\1/o,object/
+--regex-JavaScript=/function[ \t]+([A-Za-z0-9._$]+)[ \t]*(\([A-Za-z0-9._$]*)/\1/f,function/
+--regex-JavaScript=/([A-Za-z0-9._$]+)(\s*)[:=](\s*)function\s*\(\s*[A-z0-9, \t]*/\1/f,function/
+--regex-JavaScript=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*new[ \t]+Array\(/\1/a,array/
+--regex-JavaScript=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*\[/\1/a,array/
+--regex-JavaScript=/([^= ]+)[ \t]*=[ \t]*[^""]'[^'']*/\1/s,string/
+--regex-JavaScript=/([^= ]+)[ \t]*=[ \t]*[^'']"[^""]*/\1/s,string/
+
+
+--langmap=scheme:
+--langdef=scm
+--langmap=scm:.ss.scm
+--regex-scm=/^[[:space:]]*(\(|[[])define[^[:space:]]*[[:space:]]+(\(|[[])?([^][[:space:]()]+)/\3/d,definition/i
